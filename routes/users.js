@@ -9,6 +9,7 @@ const encBase264 = require("crypto-js/enc-base64");
 
 // Importer les models
 const User = require("../models/User");
+const Room = require("../models/Room");
 
 // Création des routes
 

@@ -20,7 +20,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Importer les routes
 const userRoutes = require("./routes/users");
+const roomRoutes = require("./routes/rooms");
 app.use(userRoutes);
+app.use(roomRoutes);
 
 // Créer une requête vers les routes inexistantes
 app.all("*", (req, res) => {
